@@ -38,7 +38,7 @@ def main(json_data):
       # <body id="my-body" class="body-darktheme">
       # should use:
       # "body-tag": "id=\"my-body\" class=\"body-darktheme\""
-      body = '<body {}>' + page['content']['body-tag']
+      body = '<body {}>\n' + page['content']['body-tag']
     else:
       body = '<body>\n'
     if 'body' in page['content']:
@@ -48,6 +48,7 @@ def main(json_data):
         print('BODY: appending {}'.format(file))
         with open(file, 'r') as f:
           body += f.read()
+          body += '\n'
     body += '\n</body>'
     body += '\n</html>'
     html = header + head + body
