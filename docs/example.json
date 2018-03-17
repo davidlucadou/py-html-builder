@@ -1,0 +1,77 @@
+{
+  "content-root": "/home/me/Git/website/src",
+  "webserver-root": "/var/www/my.website/",
+  "pages": [
+    { "path": "index.html",
+      "lang": "en",
+      "content": {
+        "header": {
+          "0": "global/license.txt",
+          "1": "global/ascii_art.txt"
+        }, "head": {
+          "0": "global/meta_tags.html",
+          "1": "global/css_list.html",
+          "2": "global/script_list.html"
+        }, "body": {
+          "0": "global/nav.html",
+          "1": "body/index-content.html",
+          "2": "global/footer.html"
+        }
+      }
+    },
+    { "path": "about.html",
+      "lang": "fr",
+      "content": {
+        "header": {
+          "0": "global/license.txt",
+          "1": "global/ascii_art.txt"
+        }, "doctype": {
+          "0": "global/doctype.txt"
+        }, "head": {
+          "0": "global/full-head.html"
+        }, "body": {
+          "0": "global/nav.html",
+          "1": "body/about-content.html",
+          "2": "body/about-contact-form.html",
+          "3": "global/footer.html"
+        }
+      }
+    },
+    { "path": "err/404.html",
+      "lang": "en",
+      "content": {
+        "header": {
+          "0": "global/license.txt",
+          "1": "global/ascii_art.txt"
+        }, "doctype": {
+          "0": "global/doctype.txt"
+        }, "head": {
+          "0": "global/full-head.html",
+          "1": "alt/40x-error-metatags.html"
+        }, "body": {
+          "0": "global/nav.html",
+          "1": "body/404-content.html",
+          "2": "global/footer.html"
+        }
+      }
+    },
+    { "path": "err/50x.html",
+      "lang": "en",
+      "content": {
+        "header": {
+          "0": "global/license.txt",
+          "1": "global/ascii_art.txt"
+        }, "doctype": {
+          "0": "global/doctype.txt"
+        }, "head": {
+          "0": "global/full-head.html",
+          "1": "alt/50x-error-metatags.html"
+        }, "body": {
+          "0": "global/nav.html",
+          "1": "body/50x-content.html",
+          "2": "global/footer.html"
+        }
+      }
+    }
+  ]
+}

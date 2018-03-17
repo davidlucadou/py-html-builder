@@ -1,0 +1,29 @@
+{
+  "content-root": "/var/lib/html-gen/tim-site/assets",
+  "webserver-root": "/var/lib/html-gen/tim-site/build",
+  "pages": [
+    { "path": "index.html",
+      "lang": "en",
+      "body-tag": "id=\"body\" class=\"body-light\"",
+      "content": {
+        "header": {
+          "0": "global/header.html"
+        }, "head": {
+          "0": "index/head-01-metatags1.html",
+          "1": "global/head-02-metatags2-streamstatus.html",
+          "2": "global/head-03-globalmeta.html",
+          "3": "global/head-04-css+favicons.html",
+          "4": "global/head-05-scripts.html"
+        }, "body": {
+          "0": "index/body-01-vidplayer.html",
+          "1": "global/body-navbar.html",
+          "2": "index/body-03-about-tim.html",
+          "3": "index/body-04-about-extralives.html",
+          "4": "index/body-05-links.html",
+          "5": "index/body-06-downloads.html",
+          "6": "index/body-07-about-author.html"
+        }
+      }
+    }
+  ]
+}
