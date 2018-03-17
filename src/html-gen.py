@@ -31,7 +31,8 @@ def main(json_data):
         print('HEAD: appending {}'.format(file))
         with open(file, 'r') as f:
           head += f.read()
-    head += '\n</head>'
+          head += '\n'
+    head += '</head>'
     
     if 'body-tag' in page['content']:
       # Use body-tag for ids and classes, i.e.:
@@ -49,12 +50,10 @@ def main(json_data):
         with open(file, 'r') as f:
           body += f.read()
           body += '\n'
-    body += '\n</body>'
+    body += '</body>'
     body += '\n</html>'
     html = header + head + body
     file = os.path.normpath(os.path.join(save_path, page['path']))
-    
-    
     
     # Write file to disk
     with open(file, 'w') as f:
