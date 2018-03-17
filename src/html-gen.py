@@ -22,8 +22,8 @@ def main(json_data):
     timestamp = get_datetime_with_offset()
     header += '\n<!-- Generated on {} by David Lucadou\'s Python HTML Generator\nhttps://github.com/davidlucadou/py-html-builder -->\n'.format(timestamp)
     header += '<!DOCTYPE html>'
-    header += '<html lang="{}">'.format(page['lang'])
-    head = '<head>'
+    header += '\n<html lang="{}">'.format(page['lang'])
+    head = '\n<head>\n'
     if 'head' in page['content']:
       items = sorted(page['content']['head'])
       for item in items:#page['content']['head']:
@@ -31,7 +31,7 @@ def main(json_data):
         print('HEAD: appending {}'.format(file))
         with open(file, 'r') as f:
           head += f.read()
-    head += '</head>'
+    head += '\n</head>'
     
     if 'body-tag' in page['content']:
       # Use body-tag for ids and classes, i.e.:
@@ -40,7 +40,7 @@ def main(json_data):
       # "body-tag": "id=\"my-body\" class=\"body-darktheme\""
       body = '<body {}>' + page['content']['body-tag']
     else:
-      body = '<body>'
+      body = '<body>\n'
     if 'body' in page['content']:
       items = sorted(page['content']['body'])
       for item in items:#page['content']['body']:
@@ -48,8 +48,8 @@ def main(json_data):
         print('BODY: appending {}'.format(file))
         with open(file, 'r') as f:
           body += f.read()
-    body += '</body>'
-    body += '</html>'
+    body += '\n</body>'
+    body += '\n</html>'
     html = header + head + body
     file = os.path.normpath(os.path.join(save_path, page['path']))
     
