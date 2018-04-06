@@ -13,7 +13,8 @@
           "1": "global/head-02-metatags2-streamstatus.html",
           "2": "global/head-03-globalmeta.html",
           "3": "global/head-04-css+favicons.html",
-          "4": "global/head-05-scripts.html"
+          "4": "global/head-05-scripts.html",
+          "5": "index/head-06-contact-form.html"
         }, "body": {
           "0": "index/body-01-vidplayer.html",
           "1": "global/body-navbar.html",
@@ -21,7 +22,8 @@
           "3": "index/body-04-about-extralives.html",
           "4": "index/body-05-links.html",
           "5": "index/body-06-downloads.html",
-          "6": "index/body-07-about-author.html"
+          "6": "index/body-07-about-author.html",
+          "7": "index/body-08-contact-form.html"
         }
       }
     }
