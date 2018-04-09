@@ -40,7 +40,7 @@ def main(json_data):
                 with open(file, 'r') as f:
                     head += f.read()
                     head += '\n'
-        head += '</head>'
+        head += '</head>\n'
 
         if 'body-tag' in page['content']:
             # Use body-tag for ids and classes, i.e.:
