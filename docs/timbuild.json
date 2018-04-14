@@ -14,7 +14,8 @@
           "2": "global/head-03-globalmeta.html",
           "3": "global/head-04-css+favicons.html",
           "4": "global/head-05-scripts.html",
-          "5": "index/head-06-contact-form.html"
+          "5": "index/head-06-contact-form.html",
+          "6": "index/head-07-json-ld.html"
         }, "body": {
           "0": "index/body-01-vidplayer.html",
           "1": "global/body-navbar.html",
