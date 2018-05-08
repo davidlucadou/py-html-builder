@@ -42,13 +42,15 @@ def main(json_data):
                     head += '\n'
         head += '</head>\n'
 
-        if 'body-tag' in page['content']:
+        if 'body-tag' in page:
             # Use body-tag for ids and classes, i.e.:
             # <body id="my-body" class="body-darktheme">
             # should use:
             # "body-tag": "id=\"my-body\" class=\"body-darktheme\""
-            body = '<body {}>\n' + page['content']['body-tag']
+            print('Adding custom body tag "{}"'.format(page['body-tag']))
+            body = '<body {}>\n'.format(page['body-tag'])
         else:
+            print('No custom body tag detected')
             body = '<body>\n'
         if 'body' in page['content']:
             items = sorted(page['content']['body'])

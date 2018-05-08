@@ -4,6 +4,7 @@
   "pages": [
     { "path": "index.html",
       "lang": "en",
+      "body-tag": "id=\"bodyid\" class=\"mycssclass-lighttheme\"",
       "content": {
         "header": {
           "0": "global/license.txt",
