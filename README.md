@@ -11,7 +11,7 @@ Reducing your dependency on these will also decrease load times and make your co
 
 ### Can I see an example of a website that uses this?
 
-Sure, go to https://www.monotonetim.tv (this isn't my personal site, I built it for a Twitch streamer). You might notice if you paste this link in Slack, the link preview displays the stream status for the Twitch streamer MonotoneTim. JavaScript isn't executed by link unfurlers, so I built this program to generate a new version of the site whenever he started or stopped streaming, and push it to S3. I'll be publishing it as well once I clean the code up a bit more.
+Sure, go to https://www.monotonetim.tv/ (this isn't my personal site, I built it for a Twitch streamer). You might notice if you paste this link in Slack, the link preview displays the stream status for the Twitch streamer MonotoneTim. JavaScript isn't executed by link unfurlers, so I built this program to generate a new version of the site whenever he started or stopped streaming, and push it to S3. I'll be publishing it as well once I clean the code up a bit more.
 
 ## How do I use this?
 
